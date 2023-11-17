@@ -1,0 +1,2 @@
+1. Created new org and workspace from Terraform cloud URL
+2. Run terraform init
