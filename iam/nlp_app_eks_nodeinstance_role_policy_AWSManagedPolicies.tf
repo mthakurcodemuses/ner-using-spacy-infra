@@ -1,4 +1,4 @@
-resource "aws_iam_role_policy_attachments" "nlp_app_eks_nodeinstance_role_policy_AWSManagedPolicies" {
+resource "aws_iam_role_policy_attachment" "nlp_app_eks_nodeinstance_role_policy_AWSManagedPolicies" {
     role = aws_iam_role.nlp_app_eks_nodeinstance_role.id
     for_each = toset([
         "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly",

@@ -7,3 +7,9 @@ variable "eks_version" {
   type    = string
   default = "1.24"
 }
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  description = "AWS Secret Access Key"
+  type        = string
+  sensitive   = true
+}
